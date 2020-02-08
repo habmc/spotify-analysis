@@ -66,3 +66,5 @@ All these details were then stored inside different Pandas dataframes and later 
 <p float="left">
   <img src="/images/track_valence.png" width="400" />
 </p>
+
+From these graphs, it is easy to recognize that I tend to prefer songs with low instrumentalness/speechness/liveness, medium tempo, medium-to-high danceability and duration of 220 seconds. Song popularity and artist popularity span on a pretty wide range, which means that I do not really have preference regarding these. Valence is mainly distributed at around 0.4, suggesting that I listen to both cheerful and sad songs. It might suggest I prefer listening to sad songs a bit, but we don't know since the sample size is apparently not large enough. The result might be more accurate if you try to run the program with a bigger playlist, so try it!
