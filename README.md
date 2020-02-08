@@ -41,3 +41,28 @@ Finally I called the API to get detailed features of my tracks:
 - valence: a measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
 
 All these details were then stored inside different Pandas dataframes and later merged into one single dataframe to simplify the analyzing process.
+
+## What I found out
+<p float="left">
+  <img src="/images/track_acousticness.png" width="400" />
+  <img src="/images/track_danceability.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="/images/track_duration.png" width="400" />
+  <img src="/images/track_energy.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="/images/track_instrumentalness.png" width="400" />
+  <img src="/images/track_key.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="/images/track_mode.png" width="400" />
+  <img src="/images/track_speechiness.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="/images/track_tempo.png" width="400" />
+  <img src="/images/track_time_signature.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="/images/track_valence.png" width="400" />
+</p>
