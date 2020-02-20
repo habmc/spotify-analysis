@@ -69,5 +69,35 @@ All these details were then stored inside different Pandas dataframes and later 
 
 From these graphs, it is easy to recognize that I tend to prefer songs with low instrumentalness/speechness/liveness, medium tempo, medium-to-high danceability and duration of 220 seconds. Song popularity and artist popularity span on a pretty wide range, which means that I do not really have preference regarding these. Valence is mainly distributed at around 0.4, suggesting that I listen to both cheerful and sad songs. It might suggest I prefer listening to sad songs a bit, but we don't know since the sample size is apparently not large enough. The result might be more accurate if you try to run the program with a bigger playlist, so try it!
 
--- To be added: Comparison between my playlist and Spotify Playlist of the same genre: Asia Indie
+Now let's compare my playlist with a sample Spotify playlist of the same genres:
+
+<p float="left">
+  <img src="/images/acousticness_comparison.png" width="450" />
+  <img src="/images/artist_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/artist_popularity.png" width="450" />
+  <img src="/images/danceability_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/duration_comparison.png	" width="450" />
+  <img src="/images/energy_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/instrumentalness_comparison.png" width="400" />
+  <img src="/images/key_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/liveness_comparison.png" width="400" />
+  <img src="/images/loudness_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/mode_comparison.png" width="400" />
+  <img src="/images/speechiness_comparison.png" width="400" />
+</p>
+<p float="left">
+  <img src="/images/tempo_comparison.png" width="400" />
+  <img src="/images/time_signature_comparison.png" width="400" />
+</p>
+
 -- To be added: Codes to generate new songs (currently dealing with some authentication problems)
