@@ -97,6 +97,7 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
 </p>
 <p float="left">
   <img src="/images/tempo_comparison.png" width="450" />
+  <img src="/images/valence_comparison.png" width="400" />
 </p>
 
 -- To be added: Codes to generate new songs (currently dealing with some authentication problems)
