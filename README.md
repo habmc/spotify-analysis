@@ -76,7 +76,7 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
   <img src="/images/artist_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/artist_popularity.png" width="450" />
+  <img src="/images/time_signature_comparison.png" width="450" />
   <img src="/images/danceability_comparison.png" width="400" />
 </p>
 <p float="left">
@@ -97,7 +97,6 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
 </p>
 <p float="left">
   <img src="/images/tempo_comparison.png" width="450" />
-  <img src="/images/time_signature_comparison.png" width="400" />
 </p>
 
 -- To be added: Codes to generate new songs (currently dealing with some authentication problems)
