@@ -100,4 +100,12 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
   <img src="/images/valence_comparison.png" width="400" />
 </p>
 
+The graphs show that my playlist differs from the 1000 Indie songs in these aspects:
+
+- I like songs with slightly higher acousticness/speechiness/loudness/artist popularity
+
+- I like songs with relatively lower danceablilty/tempo/valence
+
+- I prefer songs in key (1, 4, 5) and like songs in key (2, 11) least
+
 -- To be added: Codes to generate new songs (currently dealing with some authentication problems)
