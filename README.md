@@ -84,19 +84,19 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
   <img src="/images/energy_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/instrumentalness_comparison.png" width="400" />
+  <img src="/images/instrumentalness_comparison.png" width="450" />
   <img src="/images/key_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/liveness_comparison.png" width="400" />
+  <img src="/images/liveness_comparison.png" width="450" />
   <img src="/images/loudness_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/mode_comparison.png" width="400" />
+  <img src="/images/mode_comparison.png" width="450" />
   <img src="/images/speechiness_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/tempo_comparison.png" width="400" />
+  <img src="/images/tempo_comparison.png" width="450" />
   <img src="/images/time_signature_comparison.png" width="400" />
 </p>
 
