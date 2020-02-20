@@ -80,7 +80,7 @@ Now let's compare my playlist with a sample Spotify playlist of the same genres:
   <img src="/images/danceability_comparison.png" width="400" />
 </p>
 <p float="left">
-  <img src="/images/duration_comparison.png	" width="450" />
+  <img src="/images/duration_comparison.png" width="450" />
   <img src="/images/energy_comparison.png" width="400" />
 </p>
 <p float="left">
