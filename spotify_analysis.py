@@ -209,3 +209,38 @@ sns.boxplot(data=df_sample[["acousticness", "danceability", "energy", "instrumen
                            "tempo_norm"]], ax=ax[1])
 ax[1].set_title("1000 Indie songs")
 plot.show()
+
+
+"""Filters songs to add into playlist"""
+def _apply_filters(df, condition, label):
+    before = len(df)
+    dropped_songs = df[~condition]["full_name"].head().tolist()
+    df = df[condition]
+    return df
+
+df_new_sample = df_sample.drop_duplicates(["full_name"], keep="first")
+
+# drop songs already in my original playlist
+df_new_sample = _apply_filters(df_new_sample,
+                          condition=~(df_new_sample["full_name"]).isin((df_cur["full_name"]).tolist()),
+                          label="name")
+
+df_new_sample = _apply_filters(df_new_sample, 
+                          condition=(df_new_sample["danceability"].between(0.4, 0.8)),
+                          label="acousticness")
+
+df_new_sample = _apply_filters(df_new_sample,
+                          condition=(df_new_sample["instrumentalness"] <= 0.1),
+                          label="energy")
+
+df_new_sample = _apply_filters(df_new_sample,
+                          condition=(df_new_sample["tempo"].between(80, 110)),
+                          label="tempo")
+
+df_new_sample = _apply_filters(df_new_sample,
+                          condition=(df_new_sample["key"].isin([1, 4, 5, 6, 8, 10])),
+                          label="key")
+
+df_new_sample = _apply_filters(df_new_sample,
+                          condition=(df_new_sample["duration_ms"].between(*df_cur["duration_ms"].quantile([0.10, 0.90]))),
+                          label="duraton_ms")
