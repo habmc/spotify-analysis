@@ -108,4 +108,18 @@ The graphs show that my playlist differs from the 1000 Indie songs in these aspe
 
 - I prefer songs in key (1, 4, 5) and like songs in key (2, 11) least
 
--- To be added: Codes to generate new songs (currently dealing with some authentication problems)
+After gaining some insights into my own music preferences, I applied the filters below to the 1000 songs dataframes in order to keep only tracks that I potentially like:
+
+- 0.4 <= danceability <= 0.8
+
+- duration between 10% quartile of original playlist duration and 90% quartile
+- instrumentalness <= 0.1
+- key in (1,4,5,6,8,10)
+- 80 <= tempo <= 110
+- 0.3 <= valence <= 0.5
+
+After running this code, I got a dataframe of 197 tracks. I then again used Spotipy to create a new Spotify playlist called "Asia Indie Trial" from these 197 tracks.
+
+
+  <img src="/images/result.png"/>
+
