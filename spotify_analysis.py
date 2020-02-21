@@ -244,3 +244,24 @@ df_new_sample = _apply_filters(df_new_sample,
 df_new_sample = _apply_filters(df_new_sample,
                           condition=(df_new_sample["duration_ms"].between(*df_cur["duration_ms"].quantile([0.10, 0.90]))),
                           label="duraton_ms")
+
+playlist_name_new = "Asia Indie Trial"
+
+track_ids = df_new_sample["id"].unique().tolist()
+
+scope = 'playlist-modify-public'
+token = util.prompt_for_user_token(username, scope, redirect_uri='http://localhost:8888/callback/')
+
+if token:
+    sp = spotipy.Spotify(auth=token)
+    sp.trace = False
+    playlists = sp.user_playlist_create(username, playlist_name_new, public=True,description='')
+    playlist_id = playlists["id"]
+    
+    while track_ids:
+        results = sp.user_playlist_add_tracks(username, playlist_id, track_ids[:API_LIMIT])
+        print(results)
+        track_ids = track_ids[API_LIMIT:]
+
+else:
+    print("Can't get token for", username)
