@@ -122,4 +122,13 @@ After running this code, I got a dataframe of 197 tracks. I then again used Spot
 
 
   <img src="/images/result.png"/>
+  
+## WHAT NEXT?
 
+- Listen to the generated playlist and keep track of how many suits my taste.
+
+- Run the same analysis on the generated playlist and see how it's similar to/ different from the original playlist.
+
+- Find friends who major in Music and ask them to help me improve my recommendation's accuracy by taking advantage of Spotify Audio Analysis endpoints (which provides more in-depth analysis of audios like tatum, time intervals of beats/bars, audio sections, etc).
+
+- Take ML courses and see how I can cluster my tracks?
